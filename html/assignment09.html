@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Assignment09 - COMP2132</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="msapplication-TileColor" content="#9a729f">
+    <meta name="theme-color" content="#9a729f">
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+    <link rel="stylesheet" href="../css/styles.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="../scripts/script.js" defer></script>
+</head>
+<body>
+    <div id="wrapper">
+        <header>
+            <a href="assignment09.html" id="logo-link"><img src="../images/bcit-logo.png" alt="Logo"></a>
+            <div class="header-text">
+                <h1 class="ts-basic"> COMP2132</h1>
+                <h2 class="ts-basic">Autor: Carlos Franco</h2>
+            </div>
+        </header>
+        <main>
+            <div class="container">
+                <h1><img src="../images/dice-fire.png" alt="Dice" class="small-dice"><i>Dice Game</i><img src="../images/dice-fire.png" alt="Dice" class="small-dice"></h1>
+                <div class="game">
+                    <div class="player">
+                        <h2>Player</h2>
+                        <div class="dice" id="player-dice"></div>
+                        <p>Round Score: <span id="player-round-score">0</span></p>
+                        <p>Total Score: <span id="player-total-score">0</span></p>
+                    </div>
+                    <div class="computer">
+                        <h2>Computer</h2>
+                        <div class="dice" id="computer-dice"></div>
+                        <p>Round Score: <span id="computer-round-score">0</span></p>
+                        <p>Total Score: <span id="computer-total-score">0</span></p>
+                    </div>
+                </div>
+                <button id="roll-dice">Roll Dice</button>
+                <button id="reset-game">Reset Game</button>
+                <p id="result"></p>
+                <button id="toggle-instructions">Show Instructions</button>
+                <div id="instructions" class="hidden">
+                    <h2>How to Play:</h2>
+                    <ul>
+                        <li>To start, click the 'Roll Dice' button.</li>
+                        <li>To advance to the next round, click the 'Roll Dice' button again.</li>
+                        <li>After three rounds, the game is over and the final score is calculated.</li>
+                        <li>If you want to play again, click the 'Reset Game' button or refresh the page.</li>
+                    </ul>
+                    <h2>Rules:</h2>
+                    <ul>
+                        <li>Each round, you and the computer both roll a pair of dice.</li>
+                        <li>Your score for that round will be based on the sum of the dice.</li>
+                        <li>If you roll doubles (e.g., 3 and 3) then your score is multiplied by 2.</li>
+                        <li>Rolling a 1 will give you a score of 0 for that round.</li>
+                        <li>The player who has the most points at the end of three rounds is the winner.</li>
+                    </ul>
+                </div>
+            </div>  
+        </main>
+        <footer>
+            <div class="footer-div">
+                <h1>Social Media</h1>
+                <ul>
+                    <li><a class="footer-a" href="https://www.instagram.com/loscar2482?igsh=MWd2em44cG92ZWNzZQ%3D%3D&utm_source=qr">Instagram</a></li>
+                    <li><a class="footer-a" href="https://www.facebook.com/">Facebook</a></li>
+                    <li>Email <a href="#">cfrancosoltero@my.bcit.ca</a></li>
+                </ul>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>

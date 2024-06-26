@@ -1,0 +1,206 @@
+/*fonts*/
+@import url("https://fonts.googleapis.com/css?family=Muli&display=swap");
+@import url("https://fonts.google.com/specimen/Roboto?query=roboto");
+@import url("https://fonts.googleapis.com/css?family=Roboto:300,400,500");
+@font-face {
+  font-family: "fira_sansregular";
+  src: url("..fonts/firasans-regular-webfont.woff2") format("woff2"), url("../fonts/firasans-regular-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+html {
+  font-size: 18px;
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+.ts-basic {
+  text-shadow: 5px 5px 7px #adadad;
+}
+
+header {
+  padding: 0px 0px;
+  /* flex is used to get logo and img to show beside each other*/
+  display: flex;
+  align-items: center;
+  position: sticky;
+  top: 0px;
+}
+
+.header-text {
+  display: flex;
+  flex-direction: column;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+}
+
+main {
+  padding: 25px;
+  /*fill space for sticky footer effect*/
+  flex: 1;
+  color: #0b0a0b;
+}
+
+/* standard rule for scalable images*/
+img {
+  max-width: 100%;
+  height: auto;
+  padding: 10px;
+}
+
+h1, h2, h3 {
+  margin: 0px;
+  font-family: "Muli", sans-serif;
+}
+
+/*default a tag styles*/
+a {
+  font-weight: bold;
+  color: #f5dc8f;
+  text-decoration: none;
+}
+
+/*fix up the footer content*/
+.footer-a {
+  color: #f5dc8f;
+}
+
+.footer-a:hover, .footer-a:focus {
+  color: white;
+  border-color: white;
+}
+
+/* ------ #id Selectors ------ */
+#wrapper {
+  max-width: 900px;
+  margin: auto;
+  padding: 1px;
+  background-color: #f5dc8e;
+  border-width: 0px 5px;
+  border-color: #0b0a0b;
+  border-style: solid;
+  /*sticky footer*/
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/*size the logo*/
+#logo-link {
+  /*img is inline tag by default, 
+  no good for box model rules*/
+  display: block;
+  max-width: 400px;
+  border-width: 0px;
+  margin: 0px 30px;
+}
+
+header, footer {
+  box-shadow: inset 0px 0px 4px 2px rgb(22, 22, 22);
+  background-color: #2a487b;
+  background-repeat: no-repeat;
+  background-position: top right;
+  background-image: url("../images/code-back.png");
+}
+
+/* Media query for viewport widths between 300px and 1900px */
+@media screen and (min-width: 300px) and (max-width: 1900px) {
+  /* Styles for this range of viewport widths */
+}
+/*declare some SASS Variables*/
+body {
+  font-family: Arial, sans-serif;
+  background-image: url("../images/dices.jpg");
+  color: whitesmoke;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.container {
+  text-align: center;
+  background-color: white;
+  padding: 100px;
+  border-radius: 10px;
+  color: #608093;
+  box-shadow: 0 0 0 4px #2a487b, 0 0 0 6px #6bb4d0, 0 0 5px 10px #608093;
+}
+
+button {
+  background-color: #2a487b;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  margin: 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+button:hover {
+  background-color: #6bb4d0;
+}
+
+.dice {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px;
+}
+
+.dice img {
+  width: 100px;
+  height: 100px;
+  margin: 0 5px;
+}
+
+.game {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.player, .computer {
+  width: 45%;
+  border: 5px solid #2a487b;
+  background-color: #f5dc8e;
+  margin-top: 20px;
+  padding: 45px;
+}
+
+#result {
+  font-size: 1.2em;
+  font-weight: bold;
+  color: #06b65e;
+}
+
+.hidden {
+  display: none;
+}
+
+#instructions {
+  border: 5px solid #2a487b;
+  padding: 10px;
+  margin-top: 20px;
+  text-align: left;
+  border-radius: 5px;
+}
+
+.small-dice {
+  width: 75px;
+  height: auto;
+  margin: 0 10px;
+  vertical-align: middle;
+}
+
+.hidden {
+  display: none;
+}
